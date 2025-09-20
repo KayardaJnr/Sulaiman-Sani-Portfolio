@@ -99,9 +99,10 @@ nav a:hover {
 
 .hero h2 {
   margin-top: -50px;
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
   text-align: left;
+  font-weight: 500;
 }
 
 .hero p {
