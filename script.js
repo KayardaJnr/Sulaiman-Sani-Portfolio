@@ -1,11 +1,9 @@
-// Dark/Light toggle
 const toggleBtn = document.getElementById('theme-toggle');
 toggleBtn.addEventListener('click', () => {
   document.body.classList.toggle('dark');
   toggleBtn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
 });
 
-// Scroll animations
 const faders = document.querySelectorAll('.fade-in-up');
 const appearOptions = {
   threshold: 0.1,
