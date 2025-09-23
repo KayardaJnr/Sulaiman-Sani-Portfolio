@@ -83,7 +83,6 @@ nav a:hover {
   background: #3b82f6;
 }
 
-/* Hero */
 .hero {
   display: flex;
   flex-direction: column;
@@ -126,7 +125,6 @@ nav a:hover {
   color: #fff;
 }
 
-/* Sections */
 section {
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -139,7 +137,6 @@ section h2 {
   font-size: 1.8rem;
 }
 
-/* About */
 .about {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -152,7 +149,6 @@ section h2 {
   border-radius: 1rem;
 }
 
-/* Skills */
 .skills-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -168,7 +164,6 @@ section h2 {
   font-weight: 500;
 }
 
-/* Projects */
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -204,7 +199,6 @@ section h2 {
   font-weight: 500;
 }
 
-/* Contact */
 .contact {
   text-align: center;
 }
@@ -242,7 +236,6 @@ footer {
   }
 }
 
-/* Scroll Animations */
 .fade-in-up {
   opacity: 0;
   transform: translateY(40px);
