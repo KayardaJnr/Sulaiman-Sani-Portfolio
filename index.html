@@ -10,16 +10,22 @@
 </head>
 <body>
   <header>
-    <h1>Sulaiman Sani</h1>
+    <div class="header-row">
+      <h1>Sulaiman Sani</h1>
+      <div class="header-actions">
+        <button class="toggle-btn" id="theme-toggle">🌙</button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu" aria-controls="nav-list" aria-expanded="false">☰</button>
+      </div>
+    </div>
     <nav>
-      <ul>
+      <ul id="nav-list">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-        <button class="toggle-btn" id="theme-toggle">🌙</button>
       </ul>
-    </nav> 
+    </nav>
+    <div id="nav-overlay" tabindex="-1" aria-hidden="true"></div>
   </header>
 
   <section class="hero fade-in-up">
