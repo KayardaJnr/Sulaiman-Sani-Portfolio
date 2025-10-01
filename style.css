@@ -342,6 +342,28 @@ footer {
     transform: translateX(0);
     padding-bottom: 1rem;
   }
+}
+
+@media (min-width: 769px) {
+  .nav-toggle {
+    display: none !important;
+  }
+  nav ul {
+    position: static !important;
+    height: auto !important;
+    width: auto !important;
+    background: none !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    padding: 0 !important;
+    transform: none !important;
+    box-shadow: none !important;
+    z-index: auto !important;
+    border-radius: 0 !important;
+    display: flex !important;
+  }
+}
   #nav-overlay {
     display: none;
   }
