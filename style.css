@@ -17,15 +17,20 @@
 .nav-profile-info {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+  margin-top: 0.1rem;
 }
 .nav-profile-name {
   font-weight: 600;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1.08rem;
+  margin-bottom: 0.18rem;
 }
 .nav-profile-role {
   color: #cbd5e1;
-  font-size: 0.95rem;
+  font-size: 0.93rem;
+  margin-top: 0;
 }
 /* Header actions for theme and hamburger */
 .header-actions {
@@ -323,12 +328,12 @@ footer {
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
+    min-height: 0;
     width: 220px;
     background: var(--secondary);
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: flex-start !important;
     padding-top: 0;
     padding-left: 1.2rem;
     padding-right: 1.2rem;
@@ -337,6 +342,9 @@ footer {
     box-shadow: -2px 0 8px rgba(0,0,0,0.08);
     z-index: 2001;
     border-radius: 10px 0 0 10px;
+    height: auto;
+    max-height: 90vh;
+    overflow-y: auto;
   }
   nav ul.open {
     transform: translateX(0);
