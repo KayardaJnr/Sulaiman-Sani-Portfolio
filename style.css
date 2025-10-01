@@ -1,3 +1,45 @@
+/* Avatar badge like Facebook */
+.nav-avatar-badge-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.nav-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  background: #1877f2;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+}
+.nav-badge::after {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  background: #44b700;
+  border-radius: 50%;
+  margin: auto;
+}
+
+/* Fade-in animation for profile section */
+.nav-profile-fadein {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: navProfileFadeIn 0.7s ease 0.1s forwards;
+}
+@keyframes navProfileFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* Hamburger menu profile section */
 .nav-profile {
   display: flex;
