@@ -1,3 +1,35 @@
+/* Logo profile for desktop header */
+.logo-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.logo-profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.logo-profile-name {
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.08rem;
+  line-height: 1.1;
+}
+.logo-profile-role {
+  color: #cbd5e1;
+  font-size: 0.92rem;
+  margin-top: 0.1rem;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* .logo-profile is now visible on all screen sizes */
+@media (min-width: 769px) {
+  .nav-profile {
+    display: none !important;
+  }
+}
 /* Avatar badge like Facebook */
 .nav-avatar-badge-wrap {
   position: relative;
