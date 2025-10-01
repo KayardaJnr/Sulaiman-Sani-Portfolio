@@ -1,3 +1,51 @@
+/* Fade-in entrance animation for sections */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(.23,1.02,.43,.99), transform 0.7s cubic-bezier(.23,1.02,.43,.99);
+}
+.fade-in-section.visible {
+  opacity: 1;
+  transform: none;
+}
+/* Download Resume Button */
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 2em;
+  padding: 0.7em 1.6em;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 12px 0 rgba(37, 99, 235, 0.10);
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 1.2em;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.18s;
+}
+.resume-btn svg {
+  width: 1.2em;
+  height: 1.2em;
+  fill: #fff;
+  transition: fill 0.2s;
+}
+.resume-btn:hover {
+  background: linear-gradient(90deg, #60a5fa 0%, #2563eb 100%);
+  box-shadow: 0 6px 24px 0 rgba(37, 99, 235, 0.18);
+  transform: translateY(-2px) scale(1.04);
+}
+.resume-btn:active {
+  transform: scale(0.98);
+}
+@media (max-width: 700px) {
+  .resume-btn {
+    font-size: 0.97rem;
+    padding: 0.6em 1.1em;
+  }
+}
 @media (max-width: 700px) {
   .skills-heading-svg.pro-skills-icon,
   .projects-heading-icon .skills-heading-svg.pro-skills-icon,
