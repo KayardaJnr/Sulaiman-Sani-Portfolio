@@ -1,3 +1,32 @@
+/* Hamburger menu profile section */
+.nav-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 0 1.2rem 0.2rem;
+  border-bottom: 1px solid #334155;
+  margin-bottom: 0.5rem;
+}
+.nav-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50% !important;
+  object-fit: cover;
+  border: 2px solid var(--primary);
+}
+.nav-profile-info {
+  display: flex;
+  flex-direction: column;
+}
+.nav-profile-name {
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.1rem;
+}
+.nav-profile-role {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
 /* Header actions for theme and hamburger */
 .header-actions {
   display: flex;
@@ -271,6 +300,12 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .nav-profile {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
   .header-row {
     flex-direction: row;
     justify-content: space-between;
@@ -285,22 +320,23 @@ footer {
     align-self: flex-end;
   }
   nav ul {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 0;
     right: 0;
+    height: 100vh;
     width: 220px;
     background: var(--secondary);
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem 1.2rem 1rem 1.2rem;
+    justify-content: flex-start;
+    padding-top: 0;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
     transform: translateX(100%);
     transition: transform 0.3s ease;
-    box-shadow: -2px 2px 8px rgba(0,0,0,0.08);
+    box-shadow: -2px 0 8px rgba(0,0,0,0.08);
     z-index: 2001;
-    border-radius: 0 0 0 10px;
-    height: auto;
-    max-height: 80vh;
-    overflow-y: auto;
+    border-radius: 10px 0 0 10px;
   }
   nav ul.open {
     transform: translateX(0);
