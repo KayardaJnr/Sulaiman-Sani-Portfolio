@@ -1,3 +1,51 @@
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  background: linear-gradient(90deg, #2563eb 0%, #60a5fa 100%);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 2em;
+  padding: 0.8em 2em 0.8em 1.5em;
+  font-size: 1.08rem;
+  box-shadow: 0 4px 18px 0 rgba(37, 99, 235, 0.13), 0 1.5px 0 #fff inset;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 1.5em;
+  letter-spacing: 0.01em;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.22s, box-shadow 0.22s, transform 0.18s;
+}
+.resume-btn svg {
+  width: 1.3em;
+  height: 1.3em;
+  fill: #fff;
+  margin-left: 0.2em;
+  transition: transform 0.22s cubic-bezier(.23,1.02,.43,.99), fill 0.22s;
+}
+.resume-btn::after {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background: linear-gradient(120deg, rgba(255,255,255,0.13) 0%, rgba(96,165,250,0.09) 100%);
+  opacity: 0.7;
+  pointer-events: none;
+  border-radius: 2em;
+}
+.resume-btn:hover {
+  background: linear-gradient(90deg, #60a5fa 0%, #2563eb 100%);
+  box-shadow: 0 8px 32px 0 rgba(37, 99, 235, 0.18), 0 1.5px 0 #fff inset;
+  transform: translateY(-2px) scale(1.045);
+}
+.resume-btn:hover svg {
+  transform: translateX(7px) scale(1.13);
+  fill: #fff;
+}
+.resume-btn:active {
+  transform: scale(0.97);
+}
 /* Fade-in entrance animation for sections */
 .fade-in-section {
   opacity: 0;
