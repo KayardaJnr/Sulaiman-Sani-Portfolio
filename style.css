@@ -1,3 +1,27 @@
+/* Center align contact heading and section */
+#contact h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+  width: 100%;
+}
+#contact .contact-heading-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact .contact-card,
+#contact .contact-desc,
+#contact .contact-actions,
+#contact .contact-form {
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  margin-left: auto;
+  margin-right: auto;
+}
 .contact-heading-svg {
   display: inline-block;
   vertical-align: middle;
