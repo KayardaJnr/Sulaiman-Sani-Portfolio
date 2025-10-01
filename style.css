@@ -1,3 +1,68 @@
+@media (max-width: 600px) {
+  .hero {
+    padding: 2.2rem 0.7rem 1.7rem 0.7rem;
+    min-height: 60vh;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .hero-content {
+    flex-direction: column;
+    gap: 1.1rem;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-avatar-wrap {
+    margin-bottom: 0.5rem;
+  }
+  .hero-avatar {
+    width: 85px;
+    height: 85px;
+    border-width: 3px;
+  }
+  .hero-text {
+    align-items: center;
+    max-width: 100%;
+    padding: 0;
+  }
+  .hero-headline {
+    font-size: 1.1rem;
+    margin-bottom: 0.1rem;
+  }
+  .hero-name-gradient {
+    font-size: 1.35rem;
+    margin-bottom: 0.13rem;
+  }
+  .hero-role-badge {
+    font-size: 0.85rem;
+    padding: 0.18em 0.8em;
+    margin-bottom: 0.5rem;
+  }
+  .hero-desc {
+    font-size: 0.98rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  .hero-socials {
+    gap: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  .hero-social-link {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1.2rem;
+  }
+  .hero-social-link svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .hero-btn {
+    font-size: 0.98rem;
+    padding: 0.7rem 1.3rem;
+    margin-top: 0.1rem;
+  }
+}
 /* Logo profile for desktop header */
 .logo-profile {
   display: flex;
