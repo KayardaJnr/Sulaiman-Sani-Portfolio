@@ -1,3 +1,37 @@
+// Contact form handler
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('contact-name');
+    const email = document.getElementById('contact-email');
+    const message = document.getElementById('contact-message');
+    const successMsg = document.getElementById('form-success-message');
+    // Simple validation
+    if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
+      [name, email, message].forEach(input => {
+        if (!input.value.trim()) {
+          input.style.borderColor = '#ef4444';
+        } else {
+          input.style.borderColor = '#dbeafe';
+        }
+      });
+      return;
+    }
+    // Reset borders
+    [name, email, message].forEach(input => {
+      input.style.borderColor = '#dbeafe';
+    });
+    // Show success message
+    if (successMsg) {
+      successMsg.style.display = 'block';
+      setTimeout(() => {
+        successMsg.style.display = 'none';
+      }, 3500);
+    }
+    contactForm.reset();
+  });
+}
 // Hamburger menu logic
 const navToggle = document.getElementById('nav-toggle');
 const navList = document.getElementById('nav-list');
