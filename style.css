@@ -1,3 +1,8 @@
+#contact.fade-in-up {
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  overflow: hidden;
+}
 /* Center align contact heading and section */
 #contact h2 {
   display: flex;
