@@ -90,8 +90,7 @@
         <img src="WhatsApp Image 2025-09-16 at 8.55.23 PM.jpeg" alt="Sulaiman Sani" loading="lazy">
       </div>
       <div class="about-content">
-        <h3 class="about-name">Sulaiman Sani</h3>
-        <div class="about-role">Front-End Developer</div>
+  <!-- Name and role removed as requested -->
         <p class="about-intro">
           I’m a passionate developer who loves turning ideas into beautiful, functional web experiences. I blend creativity, code, and a user-first mindset to deliver results that matter.
         </p>
@@ -372,18 +371,19 @@ document.addEventListener('DOMContentLoaded', function() {
         </a>
       </div>
       <form class="contact-form" id="contact-form" autocomplete="off" novalidate>
-        <div class="form-row">
-          <input type="text" name="name" id="contact-name" placeholder="Your Name" required aria-label="Your Name">
-        </div>
-        <div class="form-row">
-          <input type="email" name="email" id="contact-email" placeholder="Your Email" required aria-label="Your Email">
-        </div>
-        <div class="form-row">
-          <textarea name="message" id="contact-message" placeholder="Your Message" rows="3" required aria-label="Your Message"></textarea>
-        </div>
-        <button type="submit" class="contact-form-btn">Send Message</button>
-  <div class="form-success-message" id="form-success-message" style="display:none;" aria-live="polite"></div>
-      </form>
+        <form action="https://formspree.io/f/mwkgrqzv" method="POST" class="contact-form" id="contact-form" autocomplete="off" novalidate>
+          <div class="form-row">
+            <input type="text" name="name" id="contact-name" placeholder="Your Name" required aria-label="Your Name">
+          </div>
+          <div class="form-row">
+            <input type="email" name="email" id="contact-email" placeholder="Your Email" required aria-label="Your Email">
+          </div>
+          <div class="form-row">
+            <textarea name="message" id="contact-message" placeholder="Your Message" rows="3" required aria-label="Your Message"></textarea>
+          </div>
+          <button type="submit" class="contact-form-btn">Send Message</button>
+          <div class="form-success-message" id="form-success-message" style="display:none;">Thank you! Your message has been sent.</div>
+        </form>
       <div class="contact-success-message" style="display:none;">Thank you for reaching out! I'll get back to you soon.</div>
     </div>
   </section>

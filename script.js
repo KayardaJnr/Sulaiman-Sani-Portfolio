@@ -1,14 +1,14 @@
 // Contact form handler
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
-  contactForm.addEventListener('submit', async function(e) {
-    e.preventDefault();
+  contactForm.addEventListener('submit', function(e) {
     const name = document.getElementById('contact-name');
     const email = document.getElementById('contact-email');
     const message = document.getElementById('contact-message');
     const successMsg = document.getElementById('form-success-message');
     // Simple validation
     if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
+      e.preventDefault();
       [name, email, message].forEach(input => {
         if (!input.value.trim()) {
           input.style.borderColor = '#ef4444';
@@ -18,43 +18,20 @@ if (contactForm) {
       });
       return;
     }
+    // Reset borders
     [name, email, message].forEach(input => {
       input.style.borderColor = '#dbeafe';
     });
-    // Send to Formspree (replace YOUR_FORMSPREE_ENDPOINT below)
-    try {
-      const response = await fetch('https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT', {
-        method: 'POST',
-        headers: { 'Accept': 'application/json' },
-        body: new FormData(contactForm)
-      });
-      if (response.ok) {
-        if (successMsg) {
-          successMsg.textContent = 'Thank you! Your message has been sent.';
-          successMsg.style.display = 'block';
-          setTimeout(() => {
-            successMsg.style.display = 'none';
-          }, 3500);
-        }
-        contactForm.reset();
-      } else {
-        if (successMsg) {
-          successMsg.textContent = 'Sorry, there was a problem. Please try again later.';
-          successMsg.style.display = 'block';
-          setTimeout(() => {
-            successMsg.style.display = 'none';
-          }, 3500);
-        }
-      }
-    } catch (err) {
+    // Show success message after Formspree submission
+    setTimeout(() => {
       if (successMsg) {
-        successMsg.textContent = 'Sorry, there was a problem. Please try again later.';
         successMsg.style.display = 'block';
         setTimeout(() => {
           successMsg.style.display = 'none';
         }, 3500);
       }
-    }
+      contactForm.reset();
+    }, 1000);
   });
 }
 // Hamburger menu logic
