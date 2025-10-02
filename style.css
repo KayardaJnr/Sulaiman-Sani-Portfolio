@@ -923,6 +923,10 @@ img, svg {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
 }
 /* Header row for logo and hamburger */
 .header-row {
@@ -930,6 +934,7 @@ img, svg {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 /* Overlay for mobile nav */
