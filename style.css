@@ -125,7 +125,7 @@ p, .hero-desc, .about p, .project-desc, .contact-desc {
 .btn, .resume-btn, .hero-btn, .contact-form-btn {
   font-size: 1.08rem;
   padding: 0.8rem 2.1rem;
-  border-radius: 50%;
+  border-radius: 50px;
   font-weight: 600;
   letter-spacing: 0.01em;
 }
