@@ -64,9 +64,20 @@ nav a, .project-link, .contact-icon-btn {
 }
 @media (max-width: 700px) {
   .header-actions, .nav-toggle, .toggle-btn {
-    min-width: 48px;
-    min-height: 48px;
-    font-size: 1.2rem;
+      min-width: 32px;
+      min-height: 32px;
+      font-size: 1.02rem;
+    }
+    .nav-toggle {
+      font-size: 1.02rem;
+      padding: 0.11rem 0.33rem;
+      border-radius: 7px;
+    }
+    .toggle-btn {
+      font-size: 1rem;
+      padding: 0.15rem 0.55rem;
+      border-radius: 50px;
+    }
   }
   nav a {
     font-size: 1.08rem;
@@ -114,7 +125,7 @@ p, .hero-desc, .about p, .project-desc, .contact-desc {
 .btn, .resume-btn, .hero-btn, .contact-form-btn {
   font-size: 1.08rem;
   padding: 0.8rem 2.1rem;
-  border-radius: 50px;
+  border-radius: 50%;
   font-weight: 600;
   letter-spacing: 0.01em;
 }
@@ -944,14 +955,17 @@ img, svg {
 .nav-toggle {
   display: none;
   background: var(--primary);
-  color: #fff;
-  border: none;
-  font-size: 1.4rem;
-  padding: 0.2rem 0.6rem;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-left: 1rem;
-  z-index: 1100;
+    color: #fff;
+    border: none;
+    font-size: 1.1rem;
+    padding: 0.13rem 0.45rem;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-left: 0.7rem;
+    z-index: 1100;
+    min-width: 36px;
+    min-height: 36px;
+    transition: background 0.2s, color 0.2s;
 }
 :root {
   --primary: #2563eb;
@@ -1026,12 +1040,14 @@ nav a:hover {
   background: var(--primary);
   border: none;
   color: #fff;
-  padding: 0.4rem 0.8rem;
-  border-radius: 50px;
-  cursor: pointer;
-  margin-left: 1rem;
-  font-size: 0.9rem;
-  transition: background 0.3s;
+    padding: 0.22rem 0.7rem;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 0.7rem;
+    font-size: 1rem;
+    min-width: 36px;
+    min-height: 36px;
+    transition: background 0.3s;
 }
 
 .toggle-btn:hover {
