@@ -1860,7 +1860,7 @@ img, svg {
   gap: 0.5rem;
   position: absolute;
   top: 50%;
-  right: 0;
+  right: -1.3rem;
   transform: translateY(-50%);
 }
 /* Header row for logo and hamburger */
@@ -1924,6 +1924,7 @@ body.dark {
   color: var(--text);
 }
 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1931,6 +1932,104 @@ body.dark {
   font-family: 'Poppins', sans-serif;
   transition: background-color 0.3s, color 0.3s;
   scroll-behavior: smooth;
+}
+
+header {
+  background: var(--secondary);
+  color: #fff;
+  padding: 0.7rem 1.1rem 0.7rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 12px rgba(37,99,235,0.07);
+}
+
+.header-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.1rem 0.2rem;
+}
+
+.logo-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+  margin-left: -1.1rem;
+}
+
+.logo-profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  gap: 0.05rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 0.5rem 0.3rem 0.5rem 0.3rem;
+  }
+  .header-row {
+    padding: 0.1rem 0.1rem;
+  }
+  nav ul {
+    gap: 0.3rem;
+  }
+  .logo-profile {
+    gap: 0.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 0.3rem 0.1rem 0.3rem 0.1rem;
+  }
+  .header-row {
+    flex-direction: column;
+    gap: 0.2rem;
+    padding: 0.1rem 0;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 0.1rem;
+    width: 100%;
+    align-items: flex-start;
+  }
+  nav ul li {
+    margin-left: 0;
+    width: 100%;
+  }
+  .logo-profile {
+    gap: 0.2rem;
+  }
 }
 
 body {
@@ -1977,9 +2076,9 @@ nav a:hover {
 }
 
 .toggle-btn {
-  background: var(--primary);
-  border: none;
-  color: #fff;
+    background: var(--primary);
+    border: none;
+    color: #fff;
     padding: 0.22rem 0.7rem;
     border-radius: 50px;
     cursor: pointer;
@@ -2069,7 +2168,7 @@ nav a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  /* text-fill-color: transparent; (removed, not supported) */
   margin-bottom: 0.2rem;
   letter-spacing: 0.01em;
 }
