@@ -1,3 +1,125 @@
+/* Section Backgrounds and Card Polish */
+@media (max-width: 700px) {
+  .about img, .project-card, .contact-card, .skills-list, .skills-list .skill-card {
+    border-radius: 0.7rem !important;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.07) !important;
+  }
+  .projects-section, .contact-enhanced-bg {
+    border-radius: 0.7rem !important;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.07) !important;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+  }
+  .project-image-wrap, .about img {
+    overflow: hidden;
+    border-radius: 0.7rem !important;
+  }
+  .skills-list {
+    gap: 0.5rem !important;
+  }
+  .project-card, .contact-card, .skill-card {
+    margin-bottom: 0.7rem;
+  }
+}
+/* Touch Target and Interactive Element Enhancements */
+button, .btn, .resume-btn, .hero-btn, .contact-form-btn, .project-link, .contact-icon-btn, .nav-toggle, .toggle-btn {
+  min-height: 44px;
+  min-width: 44px;
+  touch-action: manipulation;
+}
+nav a, .project-link, .contact-icon-btn {
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  border-radius: 0.7em;
+}
+@media (max-width: 700px) {
+  .header-actions, .nav-toggle, .toggle-btn {
+    min-width: 48px;
+    min-height: 48px;
+    font-size: 1.2rem;
+  }
+  nav a {
+    font-size: 1.08rem;
+    padding: 0.7em 1.2em;
+  }
+  .project-link, .contact-icon-btn {
+    font-size: 1.01rem;
+    padding: 0.7em 1.2em;
+  }
+}
+/* Typography and Spacing Refinements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.7em;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+p, .hero-desc, .about p, .project-desc, .contact-desc {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  margin-bottom: 1.1em;
+  color: var(--text);
+}
+@media (max-width: 700px) {
+  h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1.1rem;
+  }
+  h3 {
+    font-size: 1.05rem;
+  }
+  p, .hero-desc, .about p, .project-desc, .contact-desc {
+    font-size: 0.97rem;
+    margin-bottom: 0.7em;
+  }
+}
+.btn, .resume-btn, .hero-btn, .contact-form-btn {
+  font-size: 1.08rem;
+  padding: 0.8rem 2.1rem;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+@media (max-width: 700px) {
+  .btn, .resume-btn, .hero-btn, .contact-form-btn {
+    font-size: 0.97rem;
+    padding: 0.7rem 1.3rem;
+  }
+}
+/* Responsive Images and SVGs */
+img, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.project-image-wrap img,
+.about img,
+.hero-avatar {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: inherit;
+}
+/* Ensure SVG icons scale responsively */
+.skills-heading-svg,
+.skills-sparkle,
+.projects-heading-svg,
+.contact-heading-svg,
+.skill-icon svg,
+.project-link svg,
+.contact-icon-btn svg {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
 .resume-btn {
   display: inline-flex;
   align-items: center;
