@@ -1,26 +1,30 @@
 @media (max-width: 600px) {
   .about-card {
-    flex-direction: column;
-    gap: 1.1rem;
-    padding: 0.7rem 0.3rem 1.1rem 0.3rem;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.7rem;
+    padding: 0.7rem 0.2rem 1.1rem 0.2rem;
     border-radius: 0.8rem;
   }
   .about-avatar-wrap {
-    width: 100%;
+    width: 90px;
+    min-width: 90px;
     display: flex;
-    justify-content: center;
-    margin-bottom: 0.7rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 0;
   }
   .about-avatar-wrap img {
-    width: 120px;
-    height: 170px;
-    border-radius: 0.9rem 0.9rem 1.7rem 1.7rem;
+    width: 90px;
+    height: 120px;
+    border-radius: 0.7rem 0.7rem 1.2rem 1.2rem;
     box-shadow: 0 1px 8px rgba(37,99,235,0.10);
     border: 3px solid #fff;
   }
   .about-content {
     gap: 0.5rem;
     padding: 0 0.2rem;
+    flex: 1 1 0;
   }
   .about-intro {
     font-size: 0.97rem;
@@ -40,6 +44,7 @@
     font-size: 0.93rem;
     padding: 0.6rem 1.2rem;
   }
+}
 }
 /* Redesigned About Me Card */
 .about-card {
@@ -61,9 +66,9 @@
 }
 .about-avatar-wrap img {
   width: 340px;
-  height: 300px;
+  height: 285px;
   object-fit: cover;
-  border-radius: 1.7rem 1.7rem 3.2rem 3.2rem;
+  border-radius: 2.2rem 2.2rem 3.2rem 3.2rem;
   box-shadow: 0 2px 16px rgba(37,99,235,0.10);
   border: 4px solid #fff;
 }
@@ -117,9 +122,9 @@
     padding: 1.2rem 0.7rem 1.2rem 0.7rem;
   }
   .about-avatar-wrap img {
-  width: 240px;
-  height: 170px;
-  border-radius: 1.3rem 1.3rem 2.1rem 2.1rem;
+    width: 100px;
+    height: 140px;
+    border-radius: 0.8rem 0.8rem 1.5rem 1.5rem;
   }
   .about-content {
     gap: 0.7rem;
@@ -1994,11 +1999,11 @@ nav a:hover {
   justify-content: center;
 }
 .hero-avatar {
-  width: 180px;
-  height: 170px;
-  border-radius: 1.1rem 1.1rem 1.7rem 1.7rem;
-  box-shadow: 0 1px 8px rgba(37,99,235,0.10);
-  border: 3px solid #fff;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
   box-shadow: 0 6px 32px rgba(0,0,0,0.13);
   background: #fff;
 }
