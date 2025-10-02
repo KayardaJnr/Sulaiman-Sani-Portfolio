@@ -1,3 +1,33 @@
+/* Project Card Dark Mode */
+body.dark .project-card {
+  background: linear-gradient(120deg, #1e293b 80%, #334155 100%);
+  border: 1.5px solid #334155;
+  box-shadow: 0 4px 32px rgba(96,165,250,0.10);
+}
+body.dark .project-card::before {
+  background: linear-gradient(120deg, rgba(96,165,250,0.10) 0%, rgba(30,41,59,0.0) 100%);
+}
+body.dark .project-card:hover {
+  box-shadow: 0 10px 36px 0 rgba(96,165,250,0.18);
+}
+body.dark .project-image-wrap {
+  background: #334155;
+  border-bottom: 1.5px solid #2563eb;
+}
+body.dark .project-card:hover .project-image-wrap {
+  background: #2563eb22;
+}
+body.dark .project-title {
+  color: #60a5fa;
+}
+body.dark .project-desc {
+  color: #e0e7ef;
+}
+body.dark .project-tag, body.dark .project-tech .project-tag {
+  background: linear-gradient(90deg, #334155 60%, #2563eb33 100%);
+  color: #60a5fa;
+  border: 1px solid #2563eb44;
+}
 /* Section Backgrounds and Card Polish */
 @media (max-width: 700px) {
   .about img, .project-card, .contact-card, .skills-list, .skills-list .skill-card {
